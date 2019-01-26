@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Foodar Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
+</head>
+
+<body onload="displayAd()">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+
+        <nav class="upperCase">
+            <ul>
+                <li>
+                    <a href="#">Sign-In</a>
+                </li>
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+                <li>
+                    <a href="request.html">Request</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bannerAd">
+        <div class="ad-container">
+            <span class="closeAd" onclick="hideAd()">close Ad [x]</span>
+            <img src="images/bannerAd.jpg" alt="Banner Advertisement" />
+        </div>
+
+    </section>
+    <section class="imgDisplay">
+        <h1 class="upperCase">Try a New Meal Today</h1>
+    </section>
+
+    <section class="row">
+        <h1 class="upperCase">How it works</h1>
+        <div class="how">
+            <div class="menu">
+                <img src="images/menu.jpg" alt="menu" />
+            </div>
+
+            <div class="container how-it-works">
+                <p>
+                    The process is simple.We deliver whatever food you order from our partner restaurants. We provide an experience to our patrons
+                    with utmost courtesy and hospitality. Try out Foodar today!
+                </p>
+                <ol>
+                    <li>Order your food</li>
+                    <li>Find a driver</li>
+                    <li>Place pickup request</li>
+                </ol>
+                <a href="about.html">
+                    <button>Read More</button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <h1 class="upperCase">Feature Restaurants</h1>
+        <div class="restaurants">
+            <div class="res-item">
+                <div>
+                    <img src="images/fish.jpg" alt="fish dish">
+                </div>
+                <div>
+                    <h2 class="upperCase">Fish &amp; Chips Gallore!</h2>
+                    <p>Since 1968, Fish &amp; Chips Gallore! has served the bay area with its palatable array of fried fish
+                        and sailor's choice dessert.</p>
+                    <p>Order today and recieve 15% your total meal and we'll throw in our famous hush puppies as a thank you.</p>
+                </div>
+            </div>
+            <div class="res-item">
+                <div>
+                    <img src="images/burger.jpg" alt="burger dish">
+                </div>
+                <div>
+                    <h2 class="upperCase">Bubba Joe's</h2>
+                    <p>When you actually, really desire a burger, you order from Bubba Joe's. Unlike the fast food business,
+                        we eat our own food and love it.</p>
+                    <p>Order 2 burgers and get a small fry on us today.</p>
+                </div>
+            </div>
+            <div class="res-item">
+                <div>
+                    <img src="images/dessert.jpg" alt="dessert dish">
+                </div>
+                <div>
+                    <h2 class="upperCase">Awww Yeah Desserts</h2>
+                    <p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, any meal. We know you don't need encouragement
+                        from us to eat our desserts. Look at the picture. You know you want it.</p>
+                    <p>Just for you, we'll knock off 10% to make your wallet feel good too.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="row findZip" style="height: 300px;">
+        <div class="container zip-wrapper">
+            <h2 class="upperCase">Find the Nearest City</h2>
+            <p>Fill out the form below with your zip code of where you live.</p>
+            <form onsubmit="return checkZipcode(this)">
+                <input name="zipcode" type="number" max="99999" style="width:200px;" />
+                <button type="submit">Go</button>
+            </form>
+            <p id="zipStatus" style="visibility:hidden; font-weight:bolder">s</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container footer-cols">
+            <div>
+                <h2 class="upperCase">Site Map</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="about.html">How it All Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="upperCase">Legal</h2>
+                <p>Privacy Policy</p>
+                <p>Terms and Conditions</p>
+            </div>
+
+            <div>
+                <h2 class="upperCase">Food is Life:)</h2>
+                <p class="food-quote">“The secret of success in life is to eat what you like and let the food fight it out inside.” -Mark Twain</p>
+            </div>
+        </div>
+
+        <div>
+            <p>&copy; 2018. All rights reserved to <a href="https://www.linkedin.com/in/yesshankar/" target="_blank">Shankar Khatri</a></p>
+        </div>
+
+    </footer>
+
+    <script src="js/index.js" ></script>
+</body>
+
+</html>

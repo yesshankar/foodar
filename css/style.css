@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFEBDC;
+}
+
+p {
+    margin: 5px;
+    padding: 10px 10px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+input {
+    padding: 10px;
+
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #FC7307;
+    color: white;
+    cursor: pointer;
+}
+
+#bannerAd {
+    display: none;
+}
+
+.ad-container {
+    height: 200px;
+    position: relative;
+}
+
+#bannerAd img {
+    width: 100%;
+    height: 100%;
+}
+
+.closeAd {
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    background-color: rgba(255, 235, 220, 0.8);;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.closeAd:hover {
+    background-color: rgba(252, 115, 7, 0.8);
+}
+
+.bred {
+    border: 1px solid red;
+}
+.bblue {
+    border: 1px solid blue;
+}
+.bgreen {
+    border: 1px solid green;
+}
+.bblack {
+    border: 1px solid black;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.row h1 {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #9D4502;
+    font-size: 2em;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+nav a:link, nav a:visited {
+    color: black;
+}
+
+a:hover, nav a:hover {
+    color: #FC7307;
+}
+
+.container, header, section, footer {
+    display: flex;
+    padding: 10px 20px;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+footer {
+    flex-direction: column;
+    background-color: #341C09;
+    color: white;
+    text-align: center;
+}
+
+.footer-cols {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-cols > div {
+    padding: 10px;
+}
+
+footer h2 {
+    border-bottom: 2px solid #9D4502;
+}
+
+footer p {
+    padding: 5px;
+}
+
+footer > div:last-of-type {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 0 10px;
+        border-right: 2px solid black;
+    }
+
+    nav li:last-of-type {
+        padding-right: 0;
+        border: none;
+    }
+
+    .footer-cols {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .food-quote {
+        width: 250px;
+    }
+
+    .footer-cols h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .footer-cols {
+        justify-content: space-around;
+    }
+
+    .ad-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}

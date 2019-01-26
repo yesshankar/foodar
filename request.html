@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submit Your Request</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/form.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+
+        <!-- <nav class="upperCase">
+            <ul>
+                <li>
+                    <a href="#">Sign-In</a>
+                </li>
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+                <li>
+                    <a href="request.html">Request</a>
+                </li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <section class="row">
+        <h1 class="upperCase">Submit your request</h1>
+    </section>
+
+    <section class="form-section">
+        <div class="form-wrapper">
+            <p>Please fill out the form below:</p>
+
+            <form class="form-request">
+                <div>
+                    <h3 class="upperCase">Email:</h3>
+                    <input name="email" type="email" id="email" placeholder="Email" required />
+                </div>
+
+                <div>
+                    <h3 class="upperCase">Restaurant</h3>
+                    <input name="restaurant" placeholder="Restaurant Name" required />
+                </div>
+
+                <div class="input-group">
+                    <h3 class="upperCase">Choose your style</h3>
+                    <div class="lvl-input">
+                        <span class="hide">This is a classic treatment.</span>
+                        <label class="" for="classic">Classic</label>
+                        <input id="classic" name="foodStyle" type="radio" value="3" />
+                    </div>
+
+                    <div class="lvl-input">
+                        <span class="hide">Premium pinky's up.</span>
+                        <label for="premium">Premium</label>
+                        <input id="premium" name="foodStyle" type="radio" value="5" />
+                    </div>
+
+                    <div class="lvl-input">
+                        <span class="hide">Your food is served on a silver plate. Literally!</span>
+                        <label for="royal">Royal</label>
+                        <input id="royal" name="foodStyle" type="radio" value="10" />
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <h3 class="upperCase">Add Tip:</h3>
+                    <div class="lvl-input">
+                        <span class="hide">They did their job.</span>
+                        <label for="tenPercent">10%</label>
+                        <input id="tenPercent" name="tip" type="radio" value="10" />
+                    </div>
+
+                    <div class="lvl-input">
+                        <span class="hide">They made you feel special.</span>
+                        <label for="fifteenPercent">15%</label>
+                        <input id="fifteenPercent" name="tip" type="radio" value="15" />
+                    </div>
+
+                    <div class="lvl-input">
+                        <span class="hide">I wanna give them more, but this is all I have.</span>
+                        <label for="twentyPercent">20%</label>
+                        <input id="twentyPercent" name="tip" type="radio" value="20" />
+                    </div>
+                </div>
+
+                <div class="total">
+                    <h2 class="upperCase">Total: $
+                        <span id="total">0.00</span>
+                    </h2>
+                </div>
+
+                <button type="submit">REQUEST</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container footer-cols">
+            <div>
+                <h2 class="upperCase">Site Map</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="about.html">How it All Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="upperCase">Legal</h2>
+                <p>Privacy Policy</p>
+                <p>Terms and Conditions</p>
+            </div>
+
+            <div>
+                <h2 class="upperCase">Food is Life:)</h2>
+                <p class="food-quote">“The secret of success in life is to eat what you like and let the food fight it out inside.” -Mark Twain</p>
+            </div>
+        </div>
+
+        <div>
+            <p>&copy; 2018. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="js/request.js"></script>
+</body>
+
+</html>

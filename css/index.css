@@ -1,0 +1,93 @@
+.imgDisplay {
+    height: 750px;
+    background-image: url('../images/new_meal.jpg');
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDisplay h1 {
+    font-size: 5vw;
+    padding: 2vw;
+    background-color: rgba(52,28,9,0.5);
+    /* color: #FC7307; */
+    color: white;
+    
+}
+
+.how, .restaurants, .res-item {
+    display: flex;
+}
+
+.row, .how, .restaurants, .res-item {
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-it-works {
+    flex-direction: column;
+    align-items: left;
+}
+
+.how-it-works ol {
+    padding-left: 40px;
+}
+
+.menu img {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+
+}
+
+.restaurants img {
+    border-radius: 20px;
+}
+
+.res-item h2 {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.findZip {
+    justify-content: center;
+    background-image: url('../images/vegetable.jpg');
+    background-attachment: fixed;
+    text-shadow: 5px 5px 30px #FFEBDC;
+}
+
+.zip-wrapper {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 235, 220, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+@media screen and (min-width: 600px) {
+    .res-item {
+        flex-direction: row;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .how-it-works {
+        width: 50%;
+    }
+    .how {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .res-item {
+        flex-direction: column;
+        width: 33.33%;
+    }
+    .restaurants {
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+}
